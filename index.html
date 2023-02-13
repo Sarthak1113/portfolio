@@ -2,37 +2,43 @@
 <title>Sarthak Hota</title>
 <head>
     <link rel="icon" type="image/x-icon" href="./image/navlogo.svg">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/main.scss" />
-    <nav class="nav">
-        <div class="nav-main">
-            <div class="logo">
-                <a href="#"><img src="image/logo.png" class="navlogo"" /></a>
-            </div>
-            <ul class="nav-links">
-                <li class="nav-link"><a href="#section1">About Me</a></li>
-                <li class="nav-link"><a href="#section2">Expertise</a></li>
-                <li class="nav-link"><a href="#section3">Works</a></li>
-            </ul>
-        </div>
-           
-        <div class="cta">
-            <button class="btn btn-primary">Contact Me</a></button>
-        </div>
-        
-    </nav>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    
 </head>
 <body>
-   
-<div id="section1" class="section1">
+   <header>
+    <a href="#" ><img src="image/logo.png" class="logo"/></a>
+            </div>
+            <ul>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+            </ul>
+            
+        </div>
+   </header>
+   <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+        var header = document.queryselector("header");
+        header.classList.toggle("sticky",window.scrolly >0);
+    })
+   </script>
+<div id="aboutme" class="section1">
 
 </div>
-<div id="section2" class="section2">
+<div id="expertise" class="section2">
 
 </div>
-<div id="section3" class="section3">   
+<div id="education" class="section3">   
 </div>
-
+<div id="works" class="section4">   
+</div>
+<div id="contactme" class="section5"> 
+      
+</div>
 
   </div>
 </body>
