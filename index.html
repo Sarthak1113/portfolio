@@ -1,22 +1,40 @@
-<html>
-<title>Sarthak Hota</title>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <title>Sarthak Hota</title>
+
+
     <link rel="icon" type="image/x-icon" href="./image/navlogo.svg">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/65930b502c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </head>
-
+<script src="https://kit.fontawesome.com/65930b502c.js" crossorigin="anonymous"></script> 
 <body>
+
+    <!-- nav bar -->
+    
     <header>
+
         <a href="#aboutme"><img src="image/logo.png" class="logo" /></a>
         </div>
         <ul>
@@ -29,12 +47,9 @@
 
         </div>
     </header>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            var header = document.queryselector("header");
-            header.classList.toggle("sticky", window.scrolly > 0);
-        })
-    </script>
+
+>
+    <!-- aboutme section -->
     <div id="aboutme" class="section1">
         <div class="hyperlink">
 
@@ -47,6 +62,7 @@
                     class="behance" /></a>
             <a href="https://github.com/Sarthak1113" target="_blank"><img src="image/github.png" class="github" /></a>
         </div>
+
         <div class="name">
             <h1 class="first">Hi</h1>
             <h2>I'm Sarthak Ranjan Hota</h2>
@@ -63,45 +79,95 @@
         </div>
 
     </div>
+
+    <!-- expertise section -->
     <div id="expertise" class="section2">
 
     </div>
-    <div id="education" class="section3">
+
+    <!-- Education sec -->
+    <div id="education" class="section3"><br>
+        <div style="text-align: center; padding-top: 20px;"><img src="image/yep.svg" alt="" style="position: absolute;top: 80px;right: 20px; width: 200px;">
+            <h2 style="font-size: 40px;">EDUCATION</h2>
+        </div>
+        <img src="image/yep.svg" alt="" style="position: absolute;width: 200pxx;">
+        <div class="yep">
+            
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">20th may, 2015</h3>
+                            <h3>Saraswari Shishu Vidya Mandir,Kesinga</h3>
+                            <p>Board of Secondary Education </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">20th apr, 2017</h3>
+                            <h3>Saraswari +2 Science College,Bhawanipatna</h3>
+                            <p>Higher Secondary Education</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">20th may, 2020</h3>
+                            <h3>Royal College Of Science and Technology , Bhubaneswar</h3>
+                            <p>Bachelor In Computer science</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h3 class="date">20th may, 2022</h3>
+                            <h3>Gandhi Institute of Science and Technology,Gunpur</h3>
+                            <p>Master In Computer Science</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    <!-- work section -->
     <div id="works" class="section4">
-    </div>
+        </div>
+    <!-- contact me sec -->
     <div id="contactme" class="section6">
-        <div ><span style="text-align:center">Get In Touch</span></div>
+
         <div class="round-contaion">
             <div class="sideimage">
-                <img src="image/leftsideimg.png" class="left-side" /></a>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_u25cckyh.json"
+                    background="transparent" speed="1" style="width: auto; height: 600px; position: relative;" loop
+                    autoplay></lottie-player>
             </div>
             <div>
-                <div class="right-side" >
+                <div class="right-side">
                     <div class="contact-form">
-                        <form>
-                            <label for="fname">Name</label>
-                            <input type="text" id="name" name="firstname" placeholder="Your name..">
-                        
-                            <label for="lname">Gmail</label>
-                            <input type="text" id="gmail" name="gmail" placeholder="Your Gmail..">
-                        
-                        
-                        
+                        <form name="submit-to-google-sheet">
+                            <div style="padding-bottom: 10px;"><label style="font-size: 20px;color: #f84914;">Lets Connect</label><br></div>
+                            <label for="name">Name</label>
+                            <input type="text" id="Name" name="firstname" placeholder="Your name..">
+
+                            <label for="gmail">Email</label>
+                            <input type="text" id="Gmail" name="gmail" placeholder="Your email..">
+
                             <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                        
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+
                             <input type="submit" value="Submit">
                         </form>
-                      </div>
+                        <span id="msg"></span>
                     </div>
-                </div> 
-           
-
+                </div>
+            </div>
         </div>
-        
     </div>
+
+
+    <!-- Footer of the page -->
     <footer class="footer">
+        <img src="image/website_footer-design-1536x380.png" style="width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
@@ -114,6 +180,7 @@
                     </ul>
                 </div>
 
+               
 
                 <div class="footer-col">
                     <h4>Social Links</h4>
@@ -130,19 +197,79 @@
                                     src="image/linked.png" class="follow-i" /></a><br>
                             <a href="https://www.behance.net/sarthakranjanhota" target="_blank"><img
                                     src="image/behanced.png" class="follow-i" /></a>
-                            <a href="https://github.com/Sarthak1113" target="_blank"><img src="image/github.png"
-                                    class="follow-i" /></a>
-
+              
+                                      <a href="https://github.com/Sarthak1113" target="_blank"><img src="image/github.png"
+                                    class="follow-i" /></a></div>  
+                                    
+                          
                         </ul>
                     </div>
-
-
+                    <div class="footer-col">
+                        <h4>My Information</h4>
+                        <ul>
+                            <li><a ><b>Email:</b><br>sarthakranjanhota1999@gmail.com</a></li>
+                            <li><a ><b>Address:</b><br>Karangamal,Odisha<br>Dist-Nuapada</a></li>
+                           
+                        </ul>
+                    </div>
                 </div>
-            </div><br>
-            <h2 style="text-align: center; color: white; font-size: 13px;">@copyright By Sarthak Ranjan Hota</h2>
+
+                
+                </div>
+                
+
+            </div>
+            
 
     </footer>
+    <h2 style="text-align: center; color: white; font-size: 13px;background-color: #162635;padding-bottom: 10px;">@copyright By Sarthak Ranjan Hota</h2>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx6I5muZxLQ33YTdDtgIZLJDE1yHi7eLt5aG9OcAe66Ww4rOjLYvmRjuJKKTccZzVpY/exec'
+        const form = document.forms['submit-to-google-sheet']
 
+        const msg = document.getElementById('msg')
+
+        const name = document.getElementById('Name').innerHTML
+        const gmail = document.getElementById('Gmail').innerHTML
+
+        const subject = document.getElementById('subject').innerHTML
+
+        // if (name == null && gmail == null) {
+        //     console.log('invalid mail')
+        // }
+        // else {
+        //     console.log('submitted')
+        // }
+
+        form.addEventListener('submit', e => {
+            if (name == '' && gmail == '' && subject=='') {
+                        msg.innerHTML='Please fill all the details'
+            }else{
+                    
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    
+                    msg.innerHTML = 'Message sent successfully'
+                    setTimeout(() => {
+                        msg.innerHTML = ''
+                    }, 3000)
+
+                    form.reset()
+
+                })
+               .catch(error => console.error('Error!', error.message))
+            }
+        
+        })
+
+
+    // window.addEventListener("scroll", function () {
+    //         var header = document.queryselector("header");
+    //         header.classList.toggle("sticky", window.scrolly > 0);
+    //     })
+
+    </script>
 
 
 
