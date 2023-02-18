@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -28,19 +30,18 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </head>
-<script src="https://kit.fontawesome.com/65930b502c.js" crossorigin="anonymous"></script> 
+<script src="https://kit.fontawesome.com/65930b502c.js" crossorigin="anonymous"></script>
+
 <body>
 
     <!-- nav bar -->
-    
+
     <header>
 
         <a href="#aboutme"><img src="image/logo.png" class="logo" /></a>
         </div>
         <ul>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#expertise">About Me</a></li>
             <li><a href="#works">Works</a></li>
             <li><a href="#contactme">Contact Me</a></li>
         </ul>
@@ -48,19 +49,16 @@
         </div>
     </header>
 
->
+    >
     <!-- aboutme section -->
     <div id="aboutme" class="section1">
         <div class="hyperlink">
 
 
-            <a href="https://www.facebook.com/sarthakranjan.hota/" target="_blank"><img src="image/facebook.png"
-                    class="facebook" /></a>
-            <a href="https://www.linkedin.com/in/sarthak-ranjan-hota-31519a245/" target="_blank"><img
-                    src="image/linked.png" class="linkedin" /></a>
-            <a href="https://www.behance.net/sarthakranjanhota" target="_blank"><img src="image/behanced.png"
-                    class="behance" /></a>
-            <a href="https://github.com/Sarthak1113" target="_blank"><img src="image/github.png" class="github" /></a>
+            <a href="https://www.facebook.com/sarthakranjan.hota/" target="_blank"><i class="fa-brands fa-facebook-f love"></i></a>
+            <a href="https://www.linkedin.com/in/sarthak-ranjan-hota-31519a245/" target="_blank"><i class="fa-brands fa-linkedin-in love"></i></a>
+            <a href="https://www.behance.net/sarthakranjanhota" target="_blank"><i class="fa-brands fa-behance love"></i></a>
+            <a href="https://github.com/Sarthak1113" target="_blank"><i class="fa-brands fa-github love"></i></a>
         </div>
 
         <div class="name">
@@ -70,7 +68,7 @@
             <div class="buttondesign">
                 <a href="image/publication_12_741_1456.pdf" download><button class="button"><span>Download
                             Cv</span></button></a>
-                <a href="#works"><button class="button_project">Projects &nbsp &#8595</button></a>
+                <a href="#works"><button class="button_project">Projects &nbsp <i class="fa-solid fa-up-right-from-square"></i></button></a>
 
             </div>
         </div>
@@ -81,56 +79,69 @@
     </div>
 
     <!-- expertise section -->
-    <div id="expertise" class="section2">
+    <div id="expertise">
+        <div class="section2">
+            <div class="center-row">
+                <div class="expertise-col-1">
+                    <div style="height: 300px;
+                    width: 300px;
+                    background-color: #f84914;
+                    border-radius: 100%;
+                    text-align: center;
+                    display: flex;"">
+                    <img src=" /image/facebook.png" style="height: 149px;
+                    padding: 0px;
+                    margin: auto"></div>
 
-    </div>
+                </div>
 
-    <!-- Education sec -->
-    <div id="education" class="section3"><br>
-        <div style="text-align: center; padding-top: 20px;"><img src="image/yep.svg" alt="" style="position: absolute;top: 80px;right: 20px; width: 200px;">
-            <h2 style="font-size: 40px;">EDUCATION</h2>
-        </div>
-        <img src="image/yep.svg" alt="" style="position: absolute;width: 200pxx;">
-        <div class="yep">
-            
-            <div class="timeline">
-                <ul>
-                    <li>
-                        <div class="timeline-content">
-                            <h3 class="date">20th may, 2015</h3>
-                            <h3>Saraswari Shishu Vidya Mandir,Kesinga</h3>
-                            <p>Board of Secondary Education </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-content">
-                            <h3 class="date">20th apr, 2017</h3>
-                            <h3>Saraswari +2 Science College,Bhawanipatna</h3>
-                            <p>Higher Secondary Education</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-content">
-                            <h3 class="date">20th may, 2020</h3>
-                            <h3>Royal College Of Science and Technology , Bhubaneswar</h3>
-                            <p>Bachelor In Computer science</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-content">
-                            <h3 class="date">20th may, 2022</h3>
-                            <h3>Gandhi Institute of Science and Technology,Gunpur</h3>
-                            <p>Master In Computer Science</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="expertise-col-2">
+                    <h1 class="subtitle">Hey. What's Up? Hello!</h1>
+                    <p>I'm Shanice Perratt - a digital marketer and content creator who blends the best of design </p>
+                    <div class="tab-titless">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('expreince')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="education">
+                        <ul>
+                            <li><span>2015</span><br>Saraswati Shishu Vidya Mandir, Kesinga</li>
+                            <li><span>2017</span><br>Saraswati +2 Science College, Bhawanipatna</li>
+                            <li><span>2020</span><br>Royal College Of Science and Technology, Bhubaneswar</li>
+                            <li><span>2022</span><br>Gandhi Institute Od Science & Technology, Gunpur</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designed nothing</li>
+                            <li><span>Developer</span><br>Designed nothing</li>
+                            <li><span>UI/UX</span><br>Designed nothing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="expreince">
+                        <ul>
+                            <li><span>Codings</span><br>Designed nothing</li>
+                            <li><span>UI/UX</span><br>Designed nothing</li>
+                            <li><span>UI/UX</span><br>Designed nothing</li>
+                        </ul>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
 
+    </div>
+    <script src="Javascript/main.js"></script>
+
     <!-- work section -->
     <div id="works" class="section4">
-        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.js" integrity="sha512-jdM4CX13QmorrIpE3U+2hOxEO+j6hy9nZFUMIIC8LvNS699p7mxonP7z//UnPGs3Vkn299GKD9FWN60m1tZGxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+
+    </div>
     <!-- contact me sec -->
     <div id="contactme" class="section6">
 
@@ -144,7 +155,8 @@
                 <div class="right-side">
                     <div class="contact-form">
                         <form name="submit-to-google-sheet">
-                            <div style="padding-bottom: 10px;"><label style="font-size: 20px;color: #f84914;">Lets Connect</label><br></div>
+                            <div style="padding-bottom: 10px;"><label style="font-size: 20px;color: #f84914;">Lets
+                                    Connect</label><br></div>
                             <label for="name">Name</label>
                             <input type="text" id="Name" name="firstname" placeholder="Your name..">
 
@@ -180,7 +192,7 @@
                     </ul>
                 </div>
 
-               
+
 
                 <div class="footer-col">
                     <h4>Social Links</h4>
@@ -197,71 +209,73 @@
                                     src="image/linked.png" class="follow-i" /></a><br>
                             <a href="https://www.behance.net/sarthakranjanhota" target="_blank"><img
                                     src="image/behanced.png" class="follow-i" /></a>
-              
-                                      <a href="https://github.com/Sarthak1113" target="_blank"><img src="image/github.png"
-                                    class="follow-i" /></a></div>  
-                                    
-                          
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>My Information</h4>
-                        <ul>
-                            <li><a ><b>Email:</b><br>sarthakranjanhota1999@gmail.com</a></li>
-                            <li><a ><b>Address:</b><br>Karangamal,Odisha<br>Dist-Nuapada</a></li>
-                           
-                        </ul>
-                    </div>
-                </div>
 
-                
-                </div>
-                
+                            <a href="https://github.com/Sarthak1113" target="_blank"><img src="image/github.png"
+                                    class="follow-i" /></a>
+                    </div>
 
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>My Information</h4>
+                    <ul>
+                        <li><a><b>Email:</b><br>sarthakranjanhota1999@gmail.com</a></li>
+                        <li><a><b>Address:</b><br>Karangamal,Odisha<br>Dist-Nuapada</a></li>
+
+                    </ul>
+                </div>
             </div>
-            
+
+
+        </div>
+
+
+        </div>
+
 
     </footer>
-    <h2 style="text-align: center; color: white; font-size: 13px;background-color: #162635;padding-bottom: 10px;">@copyright By Sarthak Ranjan Hota</h2>
+    <h2 style="text-align: center; color: white; font-size: 13px;background-color: #162635;padding-bottom: 10px;">
+        @copyright By Sarthak Ranjan Hota</h2>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx6I5muZxLQ33YTdDtgIZLJDE1yHi7eLt5aG9OcAe66Ww4rOjLYvmRjuJKKTccZzVpY/exec'
-        const form = document.forms['submit-to-google-sheet']
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbx6I5muZxLQ33YTdDtgIZLJDE1yHi7eLt5aG9OcAe66Ww4rOjLYvmRjuJKKTccZzVpY/exec'
+                    const form = document.forms['submit-to-google-sheet']
 
-        const msg = document.getElementById('msg')
+                    const msg = document.getElementById('msg')
 
-        const name = document.getElementById('Name').innerHTML
-        const gmail = document.getElementById('Gmail').innerHTML
+                    const name = document.getElementById('Name').innerHTML
+                    const gmail = document.getElementById('Gmail').innerHTML
 
-        const subject = document.getElementById('subject').innerHTML
+                    const subject = document.getElementById('subject').innerHTML
 
         // if (name == null && gmail == null) {
-        //     console.log('invalid mail')
-        // }
-        // else {
-        //     console.log('submitted')
-        // }
+                        //     console.log('invalid mail')
+                        // }
+                        // else {
+                        //     console.log('submitted')
+                        // }
 
-        form.addEventListener('submit', e => {
-            if (name == '' && gmail == '' && subject=='') {
-                        msg.innerHTML='Please fill all the details'
-            }else{
-                    
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    
-                    msg.innerHTML = 'Message sent successfully'
-                    setTimeout(() => {
-                        msg.innerHTML = ''
-                    }, 3000)
+                        form.addEventListener('submit', e => {
+                            if (name == '' && gmail == '' && subject == '') {
+                                msg.innerHTML = 'Please fill all the details'
+                            } else {
 
-                    form.reset()
+                                e.preventDefault()
+                                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                                    .then(response => {
 
-                })
-               .catch(error => console.error('Error!', error.message))
-            }
-        
-        })
+                                        msg.innerHTML = 'Message sent successfully'
+                                        setTimeout(() => {
+                                            msg.innerHTML = ''
+                                        }, 3000)
+
+                                        form.reset()
+
+                                    })
+                                    .catch(error => console.error('Error!', error.message))
+                            }
+
+                        })
 
 
     // window.addEventListener("scroll", function () {

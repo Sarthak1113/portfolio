@@ -76,8 +76,8 @@ header.sticky ul li a{
 .section1
 {
     background-color:white;
-    height: 100%;
-    width: auto;
+    height: 100vh;
+    width: 100vw;
     text-align: left;
     display: flex;
     gap: 30px;
@@ -85,10 +85,91 @@ header.sticky ul li a{
 }
 .section2
 {
-    background-color: rgb(183, 243, 18);
-    height: 100%;
-    width: auto;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  width: 100vw;
+     
+}
+.center-row{
+  display: flex;
+  justify-content: space-between;
+   
+
+}
+.expertise-col-1 img{
+  height: 300px;
+  width: auto;
+  
+}
+.headingg{
+  font-size: 45px;
+    font-family: "Poppins";
+    background: black;
+    color: white;
+    height: 66px;
+    text-align: center;
+    width: 242px;
+}
+.expertise-col-1{
+  flex-basis: auto;
+  padding-right: 100px;
+}
+.expertise-col-2{
+  flex-basis: auto;
+}
+.subtitle{
+  font-size: 35px;
+  font-weight:600;
+  color: #000000;
+  font-family: "Poppins";
+
+}
+.tab-titless{
+    display: flex;
+    margin: 20px 0 20px;
     
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f44336;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    bottom: -8px;
+}
+.tab-links.active-link::after{
+    width: 50px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color: #f44336;
+    font-size: 15px;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+.tab-contents{
+    display: none;
+    height: 250px;
+}
+.tab-contents.active-tab{
+    display: block;
+
 }
 .section3
 {
@@ -99,20 +180,38 @@ header.sticky ul li a{
 }
 .section4
 {
-    background-color: rgb(115, 235, 4);
-    height: 100%;
-    width: auto;
+    background-color: rgb(142, 255, 37);
+    height: 100vh;
+    width: 100vw;
     
 }
- 
+
+/* Side link icon effect */
+.love{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  transition: 0.5s;
+  border-radius: 100%;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  transition: transform .5s;
+  transform: scale(.5);
+  
+}
+.love:hover{
+  transform: scale(.6);
+  background-color:#f84914 ;
+}
 
  .section6{
 
-  height: 95%;
+  height: 100%;
   background-color: #e4edef;
 
   display: flex;
-  align-items: flex-start
+  align-items: flex-start;
  
  }
 * {box-sizing: border-box;}
@@ -208,7 +307,7 @@ html{
   padding: 0px;
 }
 .hyperlink{
-  gap: 10px;
+  
     display: inline-grid;
     width: 60px;
     margin: 53px;
@@ -241,7 +340,7 @@ h2{
 button:hover{
   background-color: black;
   cursor: pointer;
-  content: '\2192';
+  content: '\f33d';
 }
 .button:hover span {
   padding-right: 20px;
