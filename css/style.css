@@ -29,7 +29,7 @@ body {
 header {
   padding: 20px;
   position: fixed;
-
+  box-shadow: 0 3px 1px rgba(189, 181, 181, 0.1);
   height: 9%;
   z-index: 9999;
   left: 0;
@@ -195,8 +195,8 @@ header.sticky ul li a {
 }
 
 .section3 {
-  background-color: rgb(142, 255, 37);
-  height: 100vh;
+  background-color: white;
+  height: auto;
   width: 100%;
 
 }
@@ -683,7 +683,7 @@ input[type=submit]:hover {
   background-color: red;
   color: white;
   cursor: pointer;
-
+transition: all 0.5s;
 
 }
 
@@ -694,7 +694,7 @@ input[type=submit]:hover {
 .Progress_bar_1 {
   max-width: 300px;
   width: 100%;
-  height: 12px;
+  height: 10px;
   border-radius: 20px;
   background-color: #e7e7e7;
 }
@@ -703,7 +703,7 @@ input[type=submit]:hover {
   max-width: 300px;
   width: 94%;
   background-color: #f84914;
-  height: 12px;
+  height: 10px;
   border-radius: 20px;
   transition: all 0.4s;
 }
@@ -711,7 +711,7 @@ input[type=submit]:hover {
 .Progress_bar_2 {
   max-width: 300px;
   width: 100%;
-  height: 12px;
+  height: 10px;
   border-radius: 20px;
   background-color: #e7e7e7;
 }
@@ -720,7 +720,7 @@ input[type=submit]:hover {
   max-width: 300px;
   width: 84%;
   background-color: #f84914;
-  height: 12px;
+  height: 10px;
   border-radius: 20px;
   transition: all 0.4s;
 }
@@ -728,7 +728,7 @@ input[type=submit]:hover {
 .Progress_bar_3 {
   max-width: 300px;
   width: 69%;
-  height: 12px;
+  height: 10px;
   border-radius: 20px;
   background-color:#e7e7e7;
 }
@@ -737,7 +737,7 @@ input[type=submit]:hover {
   max-width: 300px;
   width: 50%;
   background-color: #f84914;
-  height: 12px;
+  height: 10px;
   border-radius: 20px;
   transition: all 0.4s;
 }
@@ -745,7 +745,7 @@ input[type=submit]:hover {
 .Progress_bar_4 {
   max-width: 300px;
   width: 100%;
-  height: 12px;
+  height: 10px;
   border-radius: 20px;
   background-color: #e7e7e7;
 }
@@ -754,7 +754,106 @@ input[type=submit]:hover {
   max-width: 300px;
   width: 85%;
   background-color: #f84914;
-  height: 12px;
+  height: 10px;
   border-radius: 20px;
   transition: all 0.4s;
 }
+
+
+
+
+
+
+
+
+/* work page */
+#My_work{
+  padding: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.worklist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+
+}
+
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper{
+  
+  max-width: 1200px;
+}
+
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(207, 207, 207, 0.6),#f84914);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height .7s;
+
+}
+.layer .details{
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Poppins';
+  color: white;
+}
+
+.layer a{
+  margin-top: 20px;
+  color:#f84914;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Poppins';
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: -60px;
+  border-radius: 50%;
+  text-align: center;
+  
+
+}
+
+
+.work:hover img{
+  transform: scale(1.1);
+}
+
+
+.work:hover .layer{
+  
+  height: 100%;
+
+}
+.outerwork{
+  font-size: 30px;
+  font-family: 'Poppins';
+  text-align: center;
+}
+
