@@ -77,7 +77,7 @@ header.sticky ul li a{
 {
     background-color:white;
     height: 100vh;
-    width: 100vw;
+    width:100%;
     text-align: left;
     display: flex;
     gap: 30px;
@@ -89,7 +89,7 @@ header.sticky ul li a{
   height: 100vh;
   background-color: white;
   display: flex;
-  width: 100vw;
+  width: 100%;
      
 }
 .center-row{
@@ -173,16 +173,9 @@ header.sticky ul li a{
 }
 .section3
 {
-    background-color: white;
-    height: 100%;
-    width: auto;
-    
-}
-.section4
-{
     background-color: rgb(142, 255, 37);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     
 }
 
@@ -191,25 +184,26 @@ header.sticky ul li a{
   width: 30px;
   height: 30px;
   background-color: black;
-  transition: 0.5s;
+  transition: 0.3s;
   border-radius: 100%;
   justify-content: center;
   color: white;
   padding: 10px;
-  transition: transform .5s;
+  transition: transform .3s;
   transform: scale(.5);
   
 }
 .love:hover{
   transform: scale(.6);
   background-color:#f84914 ;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
 
- .section6{
+ .section4{
 
   height: 100%;
   background-color: #e4edef;
-
+width: 100%;
   display: flex;
   align-items: flex-start;
  

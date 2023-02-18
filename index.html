@@ -55,9 +55,12 @@
         <div class="hyperlink">
 
 
-            <a href="https://www.facebook.com/sarthakranjan.hota/" target="_blank"><i class="fa-brands fa-facebook-f love"></i></a>
-            <a href="https://www.linkedin.com/in/sarthak-ranjan-hota-31519a245/" target="_blank"><i class="fa-brands fa-linkedin-in love"></i></a>
-            <a href="https://www.behance.net/sarthakranjanhota" target="_blank"><i class="fa-brands fa-behance love"></i></a>
+            <a href="https://www.facebook.com/sarthakranjan.hota/" target="_blank"><i
+                    class="fa-brands fa-facebook-f love"></i></a>
+            <a href="https://www.linkedin.com/in/sarthak-ranjan-hota-31519a245/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in love"></i></a>
+            <a href="https://www.behance.net/sarthakranjanhota" target="_blank"><i
+                    class="fa-brands fa-behance love"></i></a>
             <a href="https://github.com/Sarthak1113" target="_blank"><i class="fa-brands fa-github love"></i></a>
         </div>
 
@@ -68,7 +71,8 @@
             <div class="buttondesign">
                 <a href="image/publication_12_741_1456.pdf" download><button class="button"><span>Download
                             Cv</span></button></a>
-                <a href="#works"><button class="button_project">Projects &nbsp <i class="fa-solid fa-up-right-from-square"></i></button></a>
+                <a href="#works"><button class="button_project">Projects &nbsp <i
+                            class="fa-solid fa-up-right-from-square"></i></button></a>
 
             </div>
         </div>
@@ -89,7 +93,7 @@
                     border-radius: 100%;
                     text-align: center;
                     display: flex;"">
-                    <img src=" /image/facebook.png" style="height: 149px;
+                    <img src="image/mypic.svg" style="height: 289px;
                     padding: 0px;
                     margin: auto"></div>
 
@@ -136,14 +140,16 @@
     <script src="Javascript/main.js"></script>
 
     <!-- work section -->
-    <div id="works" class="section4">
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.js" integrity="sha512-jdM4CX13QmorrIpE3U+2hOxEO+j6hy9nZFUMIIC8LvNS699p7mxonP7z//UnPGs3Vkn299GKD9FWN60m1tZGxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
+    <div id="works" class="section3">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.js"
+            integrity="sha512-jdM4CX13QmorrIpE3U+2hOxEO+j6hy9nZFUMIIC8LvNS699p7mxonP7z//UnPGs3Vkn299GKD9FWN60m1tZGxg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     </div>
     <!-- contact me sec -->
-    <div id="contactme" class="section6">
+    <div id="contactme" class="section4">
 
         <div class="round-contaion">
             <div class="sideimage">
@@ -232,75 +238,62 @@
 
         </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-up-long"></i></button>
-        <script>
-            let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-        </script>
 
     </footer>
     <h2 style="text-align: center; color: white; font-size: 13px;background-color: #162635;padding-bottom: 10px;">
         @copyright By Sarthak Ranjan Hota</h2>
     <script>
-                    const scriptURL = 'https://script.google.com/macros/s/AKfycbx6I5muZxLQ33YTdDtgIZLJDE1yHi7eLt5aG9OcAe66Ww4rOjLYvmRjuJKKTccZzVpY/exec'
-                    const form = document.forms['submit-to-google-sheet']
+        //For Form Response
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx6I5muZxLQ33YTdDtgIZLJDE1yHi7eLt5aG9OcAe66Ww4rOjLYvmRjuJKKTccZzVpY/exec'
+        const form = document.forms['submit-to-google-sheet']
 
-                    const msg = document.getElementById('msg')
+        const msg = document.getElementById('msg')
 
-                    const name = document.getElementById('Name').innerHTML
-                    const gmail = document.getElementById('Gmail').innerHTML
+        const name = document.getElementById('Name').innerHTML
+        const gmail = document.getElementById('Gmail').innerHTML
 
-                    const subject = document.getElementById('subject').innerHTML
+        const subject = document.getElementById('subject').innerHTML
 
-        // if (name == null && gmail == null) {
-                        //     console.log('invalid mail')
-                        // }
-                        // else {
-                        //     console.log('submitted')
-                        // }
+        form.addEventListener('submit', e => {
+            if (name == '' && gmail == '' && subject == '') {
+                msg.innerHTML = 'Please fill all the details'
+            } else {
 
-                        form.addEventListener('submit', e => {
-                            if (name == '' && gmail == '' && subject == '') {
-                                msg.innerHTML = 'Please fill all the details'
-                            } else {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
 
-                                e.preventDefault()
-                                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                                    .then(response => {
+                        msg.innerHTML = 'Message sent successfully'
+                        setTimeout(() => {
+                            msg.innerHTML = ''
+                        }, 3000)
 
-                                        msg.innerHTML = 'Message sent successfully'
-                                        setTimeout(() => {
-                                            msg.innerHTML = ''
-                                        }, 3000)
+                        form.reset()
 
-                                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            }
 
-                                    })
-                                    .catch(error => console.error('Error!', error.message))
-                            }
-
-                        })
+        })
 
 
-    // window.addEventListener("scroll", function () {
-    //         var header = document.queryselector("header");
-    //         header.classList.toggle("sticky", window.scrolly > 0);
-    //     })
+        // for buttom top  button
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
     </script>
 
