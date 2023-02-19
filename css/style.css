@@ -635,6 +635,7 @@ textarea {
   resize: vertical;
   font-family: 'Poppins';
   background: #e2e2e2a6;
+  color: #f84914;
 }
 
 input[type=submit] {
@@ -660,12 +661,12 @@ input[type=submit]:hover {
 .round-contaion {
   width: 100%;
   height: 80%;
-
+ 
   background-color: white;
   border-radius: 10px;
   margin: auto;
   display: flex;
-  padding: 30px;
+  padding: 50px;
   gap: 31px;
 }
 

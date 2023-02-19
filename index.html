@@ -279,13 +279,13 @@
                             <div style="padding-bottom: 10px;"><label style="font-size: 20px;color: #f84914;">Lets
                                     Connect</label><br></div>
                             <label for="name">Name</label>
-                            <input type="text" id="Name" name="firstname" placeholder="Your name..">
+                            <input type="text" id="Name" name="name" placeholder="Your name..">
 
                             <label for="gmail">Email</label>
                             <input type="text" id="Gmail" name="gmail" placeholder="Your email..">
 
                             <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.."
+                            <textarea id="Subject" name="subject" placeholder="Write something.."
                                 style="height:200px"></textarea>
 
                             <input type="submit" value="Submit">
@@ -361,8 +361,7 @@
 
         const name = document.getElementById('Name').innerHTML
         const gmail = document.getElementById('Gmail').innerHTML
-
-        const subject = document.getElementById('subject').innerHTML
+        const subject = document.getElementById('Subject').innerHTML
 
         form.addEventListener('submit', e => {
             if (name == '' && gmail == '' && subject == '') {
