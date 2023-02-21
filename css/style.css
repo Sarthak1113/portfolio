@@ -814,16 +814,19 @@ transition: all 0.5s;
   padding: 0 40px;
   text-align: center;
   font-size: 14px;
-  transition: height .7s;
+  transition: height .5s;
 
 }
 .layer .details{
   font-weight: bold;
   margin-bottom: 20px;
   font-family: 'Poppins';
-  color: white;
+  color: rgb(255, 255, 255);
 }
-
+.layer p{
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins';
+}
 .layer a{
   margin-top: 20px;
   color:#f84914;
@@ -839,6 +842,7 @@ transition: all 0.5s;
   
 
 }
+
 
 
 .work:hover img{

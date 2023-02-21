@@ -105,7 +105,8 @@
 
                 <div class="expertise-col-2">
                     <h1 class="subtitle">Hey. What's Up? Hello!</h1>
-                    <p>I'm a UI/UX designer! My passion lies in creating intuitive and user-friendly <br>digital experiences
+                    <p>I'm a UI/UX designer! My passion lies in creating intuitive and user-friendly <br>digital
+                        experiences
                         that not only look beautiful but also meet the needs <br>and goals of the end-users.
                     </p>
                     <div class="tab-titless">
@@ -177,52 +178,52 @@
 
             <div class="worklist">
                 <div class="work">
-                    <img src="image/work-1.png">
+                    <img src="image/first.png">
                     <div class="layer">
                         <h3 class="details">
-                            Social Media
+                            Note App UI Design
+                        </h3>
+                        <p>check out details on Behance</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/Growth sunny plant.png">
+                    <div class="layer">
+                        <h3 class="details">
+                            Growth Sunny Plant Logo
                         </h3>
                         <p>Description</p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="image/work-2.png">
+                    <img src="image/third.png">
                     <div class="layer">
                         <h3 class="details">
-                            Social Media
+                            Typography Logo Design
                         </h3>
-                        <p>Description</p>
+                        <p>Check out on behance</p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="image/work-3.png">
+                    <img src="image/fourth.png">
                     <div class="layer">
                         <h3 class="details">
-                            Social Media
+                            Feedback App Ui Design
                         </h3>
-                        <p>Description</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <p>20+ screen design with logo</p>
+                        <a href="https://www.behance.net/gallery/159641627/Feedback-App-Portfolio-UI-UX-Design"target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="image/work-3.png">
-                    <div class="layer">
+                    <img src="image/fifth.png">
+                    <div class="layer">   
                         <h3 class="details">
-                            Social Media
+                            Coffee Cafe App Design
                         </h3>
-                        <p>Description</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="image/work-3.png">
-                    <div class="layer">
-                        <h3 class="details">
-                            Social Media
-                        </h3>
-                        <p>Description</p>
+                        <p>Check out the details</p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -409,24 +410,24 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-//for active link in about me section
-var tablinks = document.getElementsByClassName("tab-links")
-var tabcontents = document.getElementsByClassName("tab-contents")
+        //for active link in about me section
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
 
-opentab=(tabname)=>{
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link")
+        opentab = (tabname) => {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
 
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
-        
-    }
-    event.currentTarget.classList.add("active-link")
-    document.getElementById(tabname).classList.add("active-tab")
-    
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
 
-}
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+
+
+        }
     </script>
 </body>
 
