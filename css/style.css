@@ -19,9 +19,7 @@ body {
   background: #000;
   font-family: "Poppins";
 }
-
 header {
-  padding: 20px;
   position: fixed;
   box-shadow: 0 3px 1px rgba(189, 181, 181, 0.1);
   height: 9%;
@@ -31,33 +29,29 @@ header {
   width: 100%;
   justify-content: space-between;
   transition: 0.6s;
-  padding: 25px 25px;
+  padding: 25px;
   background-color: white;
-
 }
 
 header .logo {
   width: 106px;
   height: auto;
-  position: relative;
   transition: 0.6s;
 }
 
 header ul {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 header ul li {
-  position: relative;
   list-style: none;
-  justify-content: center;
 }
 
 header ul li a {
-  position: relative;
   text-decoration: none;
   margin: 0 15px;
   color: black;
@@ -72,13 +66,15 @@ header.sticky {
 
 header.sticky ul li a {
   color: #000;
-
+  
 }
+
+
 
 .section1 {
   background-color: white;
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  min-width: 100%;
   text-align: left;
   display: flex;
   gap: 30px;
@@ -87,12 +83,18 @@ header.sticky ul li a {
 
 .section2 {
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: white;
   display: flex;
-  width: 100%;
-
+  min-width: 100%;
 }
+
+.section3 {
+  background-color: white;
+  min-height: auto;
+  min-width: 100%;
+}
+
 
 .center-row {
   display: flex;
@@ -189,12 +191,7 @@ header.sticky ul li a {
 
 }
 
-.section3 {
-  background-color: white;
-  height: auto;
-  width: 100%;
 
-}
 
 /* Side link icon effect */
 .love {
@@ -847,4 +844,3 @@ transition: all 0.5s;
   font-family: 'Poppins';
   text-align: center;
 }
-
